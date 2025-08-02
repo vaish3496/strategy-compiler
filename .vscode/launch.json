@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug C++",
+        "type": "lldb",
+        "request": "launch",
+        "program": "${workspaceFolder}/main",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "compilerPath": "/usr/bin/clang++",
+        "cStandard": "c17",
+        "cppStandard": "c++23",
+        "intelliSenseMode": "macos-clang-x64"
+      }
+    ]
+  }
+  
