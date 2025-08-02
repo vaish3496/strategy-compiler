@@ -15,6 +15,8 @@ enum BinaryOperator {
     Modulus,    
     GreaterThan,
     LessThan,
+    LogicalAnd,
+    LogicalOr,
     Not,
     If
 };
