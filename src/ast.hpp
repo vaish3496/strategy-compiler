@@ -95,5 +95,12 @@ struct Strategy {
     explicit Strategy(string name = "", unique_ptr<EntryStmt> entry = nullptr, unique_ptr<ExitStmt> exit = nullptr, unique_ptr<RiskStmt> risk = nullptr) : name(std::move(name)), entry(std::move(entry)), exit(std::move(exit)), risk(std::move(risk)) {}
 };
 
+// ----------------------------
+// Print Functions
+// ----------------------------
+
+void printExpression(const Expr& expr);
+void printStrategy(const struct Strategy& strategy);
+
 
 

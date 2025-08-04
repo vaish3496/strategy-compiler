@@ -25,9 +25,12 @@ class Parser {
         unique_ptr<ExitStmt> parseExit();
         unique_ptr<RiskStmt> parseRisk();
         ExprPtr parseExpression();
-        ExprPtr parseBinaryExpression();
+        ExprPtr parseLogicOr();
+        ExprPtr parseLogicAnd();
+        ExprPtr parseEquality();
+        ExprPtr parseComparison();
         ExprPtr parsePrimary();
-        ExprPtr parseFunctionCallOrIdentifier();
+
         double parseNumber();
 
         BinaryOperator tokenToBinaryOperator(const Token& type) const;
